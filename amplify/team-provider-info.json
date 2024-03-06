@@ -1,0 +1,23 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-katrinaapp-dev-220834-authRole",
+      "UnauthRoleArn": "arn:aws:iam::533267354250:role/amplify-katrinaapp-dev-220834-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::533267354250:role/amplify-katrinaapp-dev-220834-authRole",
+      "Region": "ap-southeast-2",
+      "DeploymentBucketName": "amplify-katrinaapp-dev-220834-deployment",
+      "UnauthRoleName": "amplify-katrinaapp-dev-220834-unauthRole",
+      "StackName": "amplify-katrinaapp-dev-220834",
+      "StackId": "arn:aws:cloudformation:ap-southeast-2:533267354250:stack/amplify-katrinaapp-dev-220834/b5ef9190-dae0-11ee-b37f-0aa3c9b18221",
+      "AmplifyAppId": "d1die97jpj8r3u"
+    },
+    "categories": {
+      "auth": {
+        "katrinaappb6eaa206": {}
+      },
+      "api": {
+        "katrinaapp": {}
+      }
+    }
+  }
+}

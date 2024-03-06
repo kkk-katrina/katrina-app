@@ -1,0 +1,6 @@
+{
+  "AppSyncApiName": "katrinaapp",
+  "DynamoDBBillingMode": "PAY_PER_REQUEST",
+  "DynamoDBEnableServerSideEncryption": false,
+  "AuthModeLastUpdated": "2024-03-06T00:35:05.761Z"
+}
