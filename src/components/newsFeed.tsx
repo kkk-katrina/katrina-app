@@ -93,36 +93,40 @@ export default function NewsFeed() {
                     </Typography>
                 </Grid>
             </Grid>
-            {articles.map((article: Article, index: number) => (
-                <Card key={index} sx={{ marginBottom: 4 }}>
-                    {article.urlToImage && (
-                        <CardMedia
-                            component="img"
-                            height="140"
-                            image={article.urlToImage}
-                            alt={article.title}
-                        />
-                    )}
-                    <CardActionArea
-                        href={article.url}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        <CardContent>
-                            <Typography
-                                gutterBottom
-                                variant="h6"
-                                component="div"
-                            >
-                                {article.title}
-                            </Typography>
-                            <Typography variant="body2" color="text.secondary">
-                                {article.description}
-                            </Typography>
-                        </CardContent>
-                    </CardActionArea>
-                </Card>
-            ))}
+            {articles &&
+                articles.map((article: Article, index: number) => (
+                    <Card key={index} sx={{ marginBottom: 4 }}>
+                        {article.urlToImage && (
+                            <CardMedia
+                                component="img"
+                                height="140"
+                                image={article.urlToImage}
+                                alt={article.title}
+                            />
+                        )}
+                        <CardActionArea
+                            href={article.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <CardContent>
+                                <Typography
+                                    gutterBottom
+                                    variant="h6"
+                                    component="div"
+                                >
+                                    {article.title}
+                                </Typography>
+                                <Typography
+                                    variant="body2"
+                                    color="text.secondary"
+                                >
+                                    {article.description}
+                                </Typography>
+                            </CardContent>
+                        </CardActionArea>
+                    </Card>
+                ))}
         </Box>
     );
 }

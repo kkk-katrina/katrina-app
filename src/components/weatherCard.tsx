@@ -42,7 +42,8 @@ export default function WeatherCard() {
         latitude: number,
         longitude: number,
     ): Promise<WeatherApiResponse> {
-        const apiKey = process.env.REACT_APP_OPENWEATHERMAP_API_KEY;
+        console.log(process.env);
+        const apiKey = process.env.REACT_APP_OPEN_WEATHER_API_KEY;
         const url = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=metric`;
 
         const response = await fetch(url);
